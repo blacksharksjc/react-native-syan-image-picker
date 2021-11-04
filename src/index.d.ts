@@ -28,6 +28,7 @@ export interface ImagePickerOption {
     MaxSecond: number // 选择视频最大时长，默认是180秒
     MinSecond: number // 选择视频最小时长，默认是1秒
     showSelectedIndex: boolean, // 是否显示序号， 默认不显示
+    allowTakeVideo: boolean; // 选择视频时是否允许使用相机
   }
 
   interface SelectedPhoto {
