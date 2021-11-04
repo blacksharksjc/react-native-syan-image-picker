@@ -38,6 +38,7 @@ export interface ImagePickerOption {
     type: string,	//文件类型，仅 Android，当前只返回 image
     size:number, 	 //图片大小，单位为字节 b
     base64:string	//图片的 base64 编码，如果 enableBase64 设置 false，则不返回该属性
+    coverUri?:string // 视频封面图片
   }
 
   /**
