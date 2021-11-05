@@ -299,6 +299,7 @@ public class RNSyanImagePickerModule extends ReactContextBaseJavaModule {
         int recordVideoSecond = this.cameraOptions.getInt("recordVideoSecond");
         int videoCount = this.cameraOptions.getInt("imageCount");
         boolean isCamera = this.cameraOptions.getBoolean("allowTakeVideo");
+        boolean isWeChatStyle = this.cameraOptions.getBoolean("isWeChatStyle");
 
         Activity currentActivity = getCurrentActivity();
         PictureSelector.create(currentActivity)
@@ -307,6 +308,7 @@ public class RNSyanImagePickerModule extends ReactContextBaseJavaModule {
                 .selectionMedia(selectList) // 当前已选中的视频 List
                 .openClickSound(false)// 是否开启点击声音 true or false
                 .isCamera(isCamera)// 是否显示拍照按钮 true or false
+                .isWeChatStyle(isWeChatStyle)
                 .maxSelectNum(videoCount)// 最大视频选择数量 int
                 .minSelectNum(1)// 最小选择数量 int
                 .imageSpanCount(4)// 每行显示个数 int
