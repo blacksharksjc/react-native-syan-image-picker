@@ -1,5 +1,5 @@
 {
-  "name": "react-native-syan-image-picker",
+  "name": "@jinluoni/react-native-syan-image-picker",
   "version": "0.5.3",
   "description": "React-Native 多图片选择 支持裁剪 压缩",
   "main": "src/index.js",
@@ -56,5 +56,8 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "publishConfig": {
+    "registry": "https://blacksharksjc16-npm.pkg.coding.net/jinluoni/npm/"
   }
 }
